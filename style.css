@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0b7f4f;
+}
+
+#diceContainer img {
+    width: 100px;
+    height: 100px;
+    margin: 20px 0px 15px 0px;
+}
+
+#totalSum {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+#score{
+    margin-top: 10px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.container i {
+  color: rgba(42, 36, 159, 0.625);
+}
+
+.rotateDice {
+    animation: rotate 2s linear infinite alternate-reverse;
+  }
+  
+  /* @keyframes rotate {
+    0% {
+      transform: rotate3d(1, 1, 1, 45deg);
+    }
+    25% {
+      transform: rotate3d(4, 20, 1, 90deg);
+    }
+    50% {
+      transform: rotate3d(1, 80, 5, 180deg);
+    }
+  } */
+
+
+  @keyframes rotate {
+    0% {
+      transform: rotate3d(1, 1, 1, 0deg);
+    }
+    25% {
+      transform: rotate3d(1, 1, 0, 90deg);
+    }
+    50% {
+      transform: rotate3d(0, 1, 1, 180deg);
+    }
+    75% {
+      transform: rotate3d(1, 0, 1, 270deg);
+    }
+    100% {
+      transform: rotate3d(1, 1, 1, 360deg);
+    }
+  }
+  
