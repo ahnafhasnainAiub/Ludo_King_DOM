@@ -13,9 +13,7 @@ document.getElementById('startBtn').addEventListener('click', startGame);
 document.getElementById('endBtn').addEventListener('click', endGame);
 
 function startGame() {
-
     document.getElementById('startBtn').textContent = 'Next Roll';
-
 
    
     document.getElementById("diceContainer").classList.add("rotateDice")
